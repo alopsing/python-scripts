@@ -1,0 +1,55 @@
+{
+    "Count": 2,
+    "Items": [
+        {
+            "desired_min": {
+                "S": "0"
+            },
+            "type_of_scaling": {
+                "S": "scale_down"
+            },
+            "applications_to_scale": {
+                "L": [
+                  {
+                      "S": "beanstalkEnv1"
+                  },
+                  {
+                      "S": "beanstalkEnv2"
+                  }
+                ]
+            },
+            "desired_max": {
+                "S": "0"
+            },
+            "desired_capacity": {
+                "S": "0"
+            }
+        },
+        {
+            "desired_min": {
+                "S": "1"
+            },
+            "type_of_scaling": {
+                "S": "scale_up"
+            },
+            "applications_to_scale": {
+                "L": [
+                    {
+                        "S": "beanstalkEnv1"
+                    },
+                    {
+                        "S": "beanstalkEnv2"
+                    }
+                ]
+            },
+            "desired_max": {
+                "S": "2"
+            },
+            "desired_capacity": {
+                "S": "1"
+            }
+        }
+    ],
+    "ScannedCount": 2,
+    "ConsumedCapacity": null
+}
